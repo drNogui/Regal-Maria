@@ -1,0 +1,42 @@
+body {
+    font-family: 'Papyrus', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    /* Fondo negro */
+    color: #ffffff;
+    /* Letras blancas */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    /* Letras blancas */
+    margin-top: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilo específico para la primera imagen */
+.image-gallery img:first-child {
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave */
+}
+
+/* Efecto de flotación */
+.image-gallery img:first-child:hover {
+    transform: translateY(-10px);
+    /* Elevar la imagen */
+}
