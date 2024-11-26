@@ -47,21 +47,20 @@ h3 {
 }
 
 .centered-image img {
-    max-width: 75%;
+    max-width: 65%;
     height: auto;
-
     box-shadow: 0px 0px 40px rgba(109, 104, 104, 0.5);
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* Aumentar el tamaño mínimo de las imágenes */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas */
     gap: 50px;
-    /* Aumentar el espacio entre las imágenes */
+    /* Espacio entre las imágenes */
     width: 100%;
     max-width: 900px;
-    /* Aumentar el ancho máximo del contenedor */
+    /* Ancho máximo del contenedor */
 }
 
 .image-grid img {
@@ -70,6 +69,10 @@ h3 {
     cursor: pointer;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    box-shadow: 0px 0px 40px rgba(109, 104, 104, 0.5);
+    /* Sombra alrededor de las imágenes */
+    margin: 10px;
+    /* Espacio entre las imágenes */
 }
 
 .image-grid img.flipped {
